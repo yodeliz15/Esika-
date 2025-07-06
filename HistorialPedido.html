@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historial de Pedidos - Ésika</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #D3D3D3, #f9f9f9);
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .historial-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #A52A2A;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .icono {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="historial-container">
+    <h2>Historial de Pedidos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Estado</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01/06/2025</td>
+          <td>Perfume Aurora</td>
+          <td>2</td>
+          <td>Entregado</td>
+          <td><img class="icono" src="https://via.placeholder.com/40" alt="Perfume"></td>
+        </tr>
+        <tr>
+          <td>28/05/2025</td>
+          <td>Labial Vino</td>
+          <td>3</td>
+          <td>En proceso</td>
+          <td><img class="icono" src="https://via.placeholder.com/40" alt="Labial"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

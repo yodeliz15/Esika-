@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Consultora - Ésika</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #00588b, #D2B48C); /* vinotinto y café */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-container {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: #8B0000;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #8B0000;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a60000;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Registro de Consultora</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required />
+
+      <label for="cedula">Cédula:</label>
+      <input type="text" id="cedula" placeholder="Número de cédula" required />
+
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" placeholder="ejemplo@correo.com" required />
+
+      <label for="categoria">Categoría de interés:</label>
+      <select id="categoria">
+        <option>Maquillaje</option>
+        <option>Cuidado personal</option>
+        <option>Fragancias</option>
+        <option>Accesorios</option>
+      </select>
+
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes - Ésika</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(to right, #DCDCDC, #f9f9f9);
+    }
+
+    .reportes-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4169E1;
+      margin-bottom: 2rem;
+    }
+
+    .estadistica {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 240px;
+      background-color: #F5F5F5;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      color: #8B0000;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .grafico {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .grafico img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reportes-container">
+    <h2>Reportes y Estadísticas</h2>
+    <div class="estadistica">
+      <div class="card">
+        <h3>Ventas Totales</h3>
+        <p>$1.250.000</p>
+      </div>
+      <div class="card">
+        <h3>Pedidos Realizados</h3>
+        <p>37</p>
+      </div>
+      <div class="card">
+        <h3>Producto Más Vendido</h3>
+        <p>Labial Vino</p>
+      </div>
+    </div>
+
+    <div class="grafico">
+      <h3>Gráfico de Ventas Mensuales</h3>
+      <img src="https://via.placeholder.com/600x300.png?text=Gráfico+Ventas" alt="Gráfico de ventas">
+    </div>
+  </div>
+</body>
+</html>
